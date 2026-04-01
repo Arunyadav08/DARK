@@ -215,7 +215,24 @@ footer {
       transition-duration: 0.01ms !important; 
   }
 }
- 
+ /* Mobile fix for service section */
+@media screen and (max-width: 768px) {
+
+  #service .container {
+    display: flex;
+    flex-direction: column; /* vertical layout */
+  }
+
+  #service .container > div {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  #service p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
 </style>
 </head>
 <body>
