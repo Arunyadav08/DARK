@@ -35,17 +35,35 @@ nav a {
 nav a:hover { color:#007bff; }
 
 /* Hero section */
-.hero{
-height:100vh;
-background:url('10.jpeg') center/cover;
-display:flex;align-items:center;justify-content:center;
-text-align:center;color:#00008B;
+.hero {
+  height: 80vh; /* Pehle 100vh tha, ab thoda kam */
+  background: url('10.jpeg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #00008B;
 }
-.hero h1{font-size:40px;}
-.hero p{margin:15px 0;}
-.hero button{
-padding:12px 20px;border:none;background:#000;color:#fff;
-cursor:pointer;
+
+/* Mobile ke liye (screen <= 768px) */
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 50vh; /* Mobile me aur kam height */
+    background-size: cover; /* Image properly fit ho */
+  }
+  
+  .hero h1 {
+    font-size: 28px; /* Text mobile ke liye chhota */
+  }
+  
+  .hero p {
+    font-size: 16px;
+  }
+  
+  .hero button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
 }
 
 /* Service cards */
