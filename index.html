@@ -215,26 +215,28 @@ footer {
       transition-duration: 0.01ms !important; 
   }
 }
-/* Service cards mobile fix */
+/* FORCE mobile fix */
 @media screen and (max-width: 768px) {
 
-  #service .container {
-    display: grid !important;
-    grid-template-columns: 1fr; /* ek hi column */
-    gap: 20px;
+  /* sab cards ko block bana do */
+  #service .container div {
+    display: block !important;
+    width: 100% !important;
   }
 
-  #service .container > div {
-    width: 100%;
+  /* row ko tod do */
+  #service .container {
+    display: block !important;
+  }
+
+  /* text readable karo */
+  #service p {
+    font-size: 18px !important;
+    line-height: 1.6 !important;
   }
 
   #service h3 {
-    font-size: 20px !important;
-  }
-
-  #service p {
-    font-size: 16px !important;
-    line-height: 1.6;
+    font-size: 22px !important;
   }
 }
 </style>
