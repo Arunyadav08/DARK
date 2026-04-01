@@ -36,7 +36,7 @@ nav a:hover { color:#007bff; }
 
 /* Hero section */
 .hero {
-  height: 80vh; /* Pehle 100vh tha, ab thoda kam */
+  height: 1000vh; /* Pehle 100vh tha, ab thoda kam */
   background: url('10.jpeg') center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -48,8 +48,9 @@ nav a:hover { color:#007bff; }
 /* Mobile ke liye (screen <= 768px) */
 @media screen and (max-width: 768px) {
   .hero {
-    height: 50vh; /* Mobile me aur kam height */
-    background-size: auto; /* Image properly fit ho */
+    height: 60vh; /* Mobile me aur kam height */
+    background-size: contain; /* Image properly fit ho */
+    background-positin: center top;
   }
   
   .hero h1 {
