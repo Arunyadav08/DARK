@@ -404,47 +404,73 @@ footer {
 
 <!-- Contact -->
 <section class="contact" id="contact">
-  <div class="container">
-    <p class="small-heading">GET IN TOUCH</p>
-    <h2>We're here to support you.</h2>
+  <div class="container" style="text-align:center;">
 
-    <p class="phone">📞 <a href="tel:8053309511">+91 8053309511</a></p>
+    <!-- Heading -->
+    <p style="font-size:45px; letter-spacing:2px; color:#c9a300;">
+      GET IN TOUCH
+    </p>
 
-    <h3 font-size:30px;>Hours</h3>
-    <div class="hours">
-      <div><span>Monday _ _ _ _ _ _  </span><span>9:00am – 8:30pm</span></div>
-      <div><span>Tuesday _ _ _ _ _ _ </span><span>9:00am – 8:30pm</span></div>
-      <div><span>Wednesday _ _ _ _ _ </span><span>9:00am – 8:30pm</span></div>
-      <div><span>Thursday _ _ _ _ _ _</span><span>9:00am – 8:30pm</span></div>
-      <div><span>Friday _ _ _ _ _ _ _</span><span>9:00am – 8:30pm</span></div>
-      <div><span>Saturday _ _ _ _ _ _</span><span>9:00am – 8:30pm</span></div>
-      <div><span>Sunday _ _ _ _ _ _ _</span><span>Closed</span></div>
+    <h2 style="font-size:55px; margin-bottom:15px;">
+      We're here to support you.
+    </h2>
+
+    <!-- Phone -->
+    <p style="font-size:39px; margin-bottom:25px;">
+      📞 <a href="tel:918810694005" style="text-decoration:none; color:#000;">
+        +91 8810694005
+      </a>
+    </p>
+
+    <!-- Hours -->
+    <h3 style="font-size:34px; margin-bottom:10px;">
+      Hours
+    </h3>
+
+    <div style="font-size:30px; line-height:1.8; margin-bottom:25px;">
+      <div>Monday — 9:00am – 8:30pm</div>
+      <div>Tuesday — 9:00am – 8:30pm</div>
+      <div>Wednesday — 9:00am – 8:30pm</div>
+      <div>Thursday — 9:00am – 8:30pm</div>
+      <div>Friday — 9:00am – 8:30pm</div>
+      <div>Saturday — 9:00am – 8:30pm</div>
+      <div>Sunday — Closed</div>
     </div>
 
     <!-- Form -->
-    <form onsubmit="sendToWhatsApp(event)" class="contact-form" style="max-width: 600px; margin: 40px auto;">
-      <input type="text" id="name" placeholder="Name" required>
-      <input type="email" id="email" placeholder="Email address" required>
-      <input type="text" id="phone" placeholder="Phone Number" required>
-      <textarea id="message" placeholder="Message"></textarea>
-      <button type="submit">Submit</button>
+    <form onsubmit="sendToWhatsApp(event)" 
+          style="max-width: 600px; margin: auto; display:flex; flex-direction:column; gap:12px;">
+
+      <input type="text" id="name" placeholder="Name" required
+             style="padding:12px; font-size:16px;">
+
+      <input type="email" id="email" placeholder="Email address" required
+             style="padding:12px; font-size:16px;">
+
+      <input type="text" id="phone" placeholder="Phone Number" required
+             style="padding:12px; font-size:16px;">
+
+      <textarea id="message" placeholder="Message"
+                style="padding:12px; font-size:16px;"></textarea>
+
+      <button type="submit"
+              style="padding:12px; font-size:28px; background:#FFD700; color:#000; border:none; border-radius:5px;">
+        Submit
+      </button>
     </form>
+
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <p>© 2026 Moms Star | All Rights Reserved</p>
+    <p style="font-size:16px; text-align:center;">
+      © 2026 Moms Star | All Rights Reserved
+    </p>
   </div>
 </footer>
 
 <script>
-// Scroll functionality
-function scrollToSection(id){
-  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-}
-
-// WhatsApp form submission
 function sendToWhatsApp(e){
   e.preventDefault();
   
@@ -453,7 +479,7 @@ function sendToWhatsApp(e){
   const phone = document.getElementById("phone").value;
   const message = document.getElementById("message").value;
   
-  const url = `https://wa.me/918053309511?text=${encodeURIComponent(
+  const url = `https://wa.me/918810694005?text=${encodeURIComponent(
     `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`
   )}`;
   
@@ -461,8 +487,11 @@ function sendToWhatsApp(e){
 }
 </script>
 
-<a href="https://wa.me/918053309511" target="_blank" class="whatsapp-btn">
-  💬
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/918810694005" target="_blank"
+   style="position:fixed; bottom:20px; right:20px; background:#25D366; 
+   color:#fff; font-size:22px; padding:15px; border-radius:50%; text-decoration:none;">
+   💬
 </a>
 </body>
 </html>
